@@ -66,7 +66,7 @@
 		let path_arr=location.pathname.split("/");
 		if(path_arr[1]!="notice")
 		{
-			request_promise("https://static-data.a4u.co.in/mech/staff-gdoc-links.json")
+			request_promise("./static-data/staff-gdoc-links.json")
 				.then(
 					(res)=>
 					{

@@ -94,7 +94,7 @@
 			document.getElementById('contents_page').innerHTML="Notice is loading....";
 			document.getElementById('contents_page').parentElement.parentElement.innerHTML=document.getElementById('contents_page').outerHTML;
 			document.getElementById('contents_page').setAttribute("class","u1");
-			request_promise("https://script.google.com/macros/s/AKfycbzKuzI3GRcXzWsibOhd6S9astw-GGRvsGT3rIa8D1p1JnxE5KsVlPL_/exec?notice_id="+location.pathname.substring(8))
+			request_promise("https://script.google.com/macros/s/AKfycbxAZi2lXjzb1esOQAINMn_4XHDItOI5QqDsCiQVQQY0Jz_Ig-amBTouJ4W45PEldsRquw/exec?fn=getAnnouncement&announcement_id="+location.pathname.substring(8)+"&id=10BNvkb6Eg7dUOOkXpSmm76bdL0rxjDGlvcmxswk15hM")
 				.then(
 					(res)=>
 					{
